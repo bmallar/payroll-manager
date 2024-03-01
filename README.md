@@ -1,2 +1,1 @@
 # payroll-manager-chall
-s

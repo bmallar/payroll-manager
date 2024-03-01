@@ -1,14 +1,28 @@
-cc// Get a reference to the #add-employees-btn element
-const addEmployeesBtn = document.querySelector('#add-employees-btn');
+// Get a reference to the #add-employees-btn element
+// the button is disabled in css
 
+
+
+
+const addEmployeesBtn = document.querySelector('#addEmployeesBtn');
+addEmployeesBtn.disabled = false;
+
+
+ 
 // Collect employee data
-const collectEmployees = function() {
+function collectEmployees() {
   // TODO: Get user input to create and return an array of employee objects
-}// get user input
+}
+// get user input
+let userChoice = window.prompt("Enter first name:");
   // ask for first name
+
   // ask for last name
+
   // ask for salary
+
   // make employee objects
+
   // add them to an array
 
   // My instructor Dan wrote this comment:  MUST RETURN ARRAY OF EMPLOYEE DATA
@@ -17,13 +31,16 @@ const collectEmployees = function() {
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
+
 }// My instructor Dan wrote this comment:  use a for loop to go through all the objects
+
   // My instructor Dan wrote this comment:  get salaries from objects
 
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
+
  // My instructor Dan wrote this comment: don't forget : Math.floor(Math.random()* number of employees)
 }
 
