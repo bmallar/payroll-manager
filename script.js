@@ -2,11 +2,16 @@
 // the button is disabled in css
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
-// Collect employee data
+
+// Collect employee data// TODO: Get user input to create and return an array of employee objects
+const employeesArray =[];
 function collectEmployees() { 
-  let userChoice = window.prompt("Enter first name:");
-  // TODO: Get user input to create and return an array of employee objects
+  let firstName = prompt("Enter first name:");
+  let lastName = prompt("Enter last name:");
+  let salary = prompt("Enter employees salary:");
 }
+
+
 // get user input
 
   // ask for first name
