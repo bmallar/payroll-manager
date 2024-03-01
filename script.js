@@ -1,20 +1,14 @@
 // Get a reference to the #add-employees-btn element
 // the button is disabled in css
+const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
-
-
-
-const addEmployeesBtn = document.querySelector('#addEmployeesBtn');
-addEmployeesBtn.disabled = false;
-
-
- 
 // Collect employee data
-function collectEmployees() {
+function collectEmployees() { 
+  let userChoice = window.prompt("Enter first name:");
   // TODO: Get user input to create and return an array of employee objects
 }
 // get user input
-let userChoice = window.prompt("Enter first name:");
+
   // ask for first name
 
   // ask for last name
