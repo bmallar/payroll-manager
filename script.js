@@ -64,16 +64,27 @@ function collectEmployees() {
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
+let sum =0;
+  for (let index = 0; i < opti; i++) {
+  sum += options[i];
+  
+}
+
+return sum / numbers.length;
+}
 //   // TODO: Calculate and display the average salary
 
-}// My instructor Dan wrote this comment:  use a for loop to go through all the objects
+
+
+// My instructor Dan wrote this comment:  use a for loop to go through all the objects
 
 //   // My instructor Dan wrote this comment:  get salaries from objects
 
 
 // // Select a random employee
 const getRandomEmployee = function(employeesArray) {
-//   // TODO: Select and display a random employee
+
+  //   // TODO: Select and display a random employee
 
 //  // My instructor Dan wrote this comment: don't forget : Math.floor(Math.random()* number of employees)
 }
