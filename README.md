@@ -17,6 +17,8 @@ Then to pop up the average salary in the console log i used a for loop. most of 
 
 Also set sum to 0 and used parseInt in my equation because it involed numbers then i return sum diveded by the employessArray.length, which is the number of employees. thats how you find an average. 
 
-Lastly to select a random employee from the list written in we would 
+Lastly to select a random employee from the list written in we would add the equation for a randomizer to any varible name i choose, then we console log the array with the varible connected 
 
+[visit my page here](https://github.com/bmallar/payroll-manager){:target"_blank"}
 
+![My project](./images\Screenshot20%(8).png)
