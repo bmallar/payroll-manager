@@ -16,7 +16,6 @@ function collectEmployees() {
   let lastName = prompt("Enter last name:");
   let salary = prompt("Enter employees salary:");
   if (!firstName || !lastName || !salary) {
-    console.log("test")
     alert("missing infomation");
     return;
   }
@@ -83,10 +82,10 @@ return sum / employeesArray.length;
 
 // // Select a random employee
 const getRandomEmployee = function(employeesArray) {
-employeesArray = Math.floor(Math.random() * employeesArray.length);
+var randomEmployee = Math.floor(Math.random() * employeesArray.length);
   
 //   // TODO: Select and display a random employee
-
+console.log("randomly Selected Employee", employeesArray[randomEmployee]);
 //  // My instructor Dan wrote this comment: don't forget : Math.floor(Math.random()* number of employees)
 }
 
