@@ -65,12 +65,12 @@ function collectEmployees() {
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
 let sum =0;
-  for (let index = 0; i < opti; i++) {
-  sum += options[i];
+  for (let i = 0; i < employeesArray.length; i++) {
+  sum += parseInt(employeesArray[i].salary);
   
 }
 
-return sum / numbers.length;
+return sum / employeesArray.length;
 }
 //   // TODO: Calculate and display the average salary
 
@@ -83,8 +83,9 @@ return sum / numbers.length;
 
 // // Select a random employee
 const getRandomEmployee = function(employeesArray) {
-
-  //   // TODO: Select and display a random employee
+employeesArray = Math.floor(Math.random() * employeesArray.length);
+  
+//   // TODO: Select and display a random employee
 
 //  // My instructor Dan wrote this comment: don't forget : Math.floor(Math.random()* number of employees)
 }
@@ -134,6 +135,10 @@ const trackEmployeeData = function() {
   const employees = collectEmployees();
 
   console.table(employees);
+// got help from BCS learning assist got the avg by adding these lines
+  const avg = displayAverageSalary(employees)
+// 
+  console.log(avg)
 
   displayAverageSalary(employees);
 
