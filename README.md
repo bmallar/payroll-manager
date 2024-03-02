@@ -19,6 +19,6 @@ Also set sum to 0 and used parseInt in my equation because it involed numbers th
 
 Lastly to select a random employee from the list written in we would add the equation for a randomizer to any varible name i choose, then we console log the array with the varible connected 
 
-[visit my page here](https://github.com/bmallar/payroll-manager){:target="_blank"}
+[visit my page here](https://github.com/bmallar/payroll-manager)
 
-![My project](./images/Screenshot(8).png)
+![My project](./images/Screenshot%20(8).png)
