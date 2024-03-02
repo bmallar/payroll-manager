@@ -9,31 +9,44 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
 function collectEmployees() {
   
-  
-  const employeesArray = {
-  let firstName = prompt("Enter first name:");
+  let addEmployee = true;
+  const options = [];
+  while (addEmployee) {
+    let firstName = prompt("Enter first name:");
   let lastName = prompt("Enter last name:");
   let salary = prompt("Enter employees salary:");
+  if (!firstName || !lastName || !salary) {
+    console.log("test")
+    alert("missing infomation");
+    return;
   }
-  let addEmployee = true;
-
-const options = [];
+  console.log(firstName,lastName,salary)
+  const employeesObject = {
+  firstName,
+  lastName,
+  salary,
+  }
   
   
-  While (addEmployee) {
-    
-    let userChoice = window.prompt("Do you want to add another employee?");
 
-    if (!userChoice) {
-      return;
+  
+  console.log("object", employeesObject)
+  console.log("options before",options)
+  options.push(employeesObject)
+  console.log("options after",options)
+// heres another why to do it
+// const object = {
+//   firstName:"ben",
+//   lastName:"mallar",
+//   salary:salary,
+//   }
+  // console.log(object)
+  
+    addEmployee = window.confirm("Do you want to add another employee?");
+
     }
-  
-  }
+  return options;
 }
-
-
- 
-
 // get user input
 
   // ask for first name
@@ -51,18 +64,18 @@ const options = [];
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
-  // TODO: Calculate and display the average salary
+//   // TODO: Calculate and display the average salary
 
 }// My instructor Dan wrote this comment:  use a for loop to go through all the objects
 
-  // My instructor Dan wrote this comment:  get salaries from objects
+//   // My instructor Dan wrote this comment:  get salaries from objects
 
 
-// Select a random employee
+// // Select a random employee
 const getRandomEmployee = function(employeesArray) {
-  // TODO: Select and display a random employee
+//   // TODO: Select and display a random employee
 
- // My instructor Dan wrote this comment: don't forget : Math.floor(Math.random()* number of employees)
+//  // My instructor Dan wrote this comment: don't forget : Math.floor(Math.random()* number of employees)
 }
 
 /*
